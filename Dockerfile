@@ -2,14 +2,13 @@ FROM node:16-alpine
 
 EXPOSE ${PORT}
 
-COPY . /backend
-WORKDIR /backend
+COPY . /app
+WORKDIR /app
 
 RUN corepack enable
-RUN apt update
-RUN apt install openssl -y
 RUN npm run setup
-RUN npx prisma generate
+RUN npm run install:all
+RUN npm generate
 RUN npm run migrate
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "deploy"]

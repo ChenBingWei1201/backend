@@ -1,5 +1,5 @@
 import express from "express";
-// import path from "path";
+import path from "path";
 import http from "http";
 import cors from "cors";
 import bodyParser from "body-parser";
@@ -59,11 +59,11 @@ app.use(
 // }
 
 // if (process.env.NODE_ENV === "production") {
-  // const __dirname = path.resolve();
-  // app.use(express.static(path.join(__dirname, "../frontend", "dist")));
-  // app.get("/*", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
-  // });
+//   const __dirname = path.resolve();
+//   app.use(express.static(path.join(__dirname, "../frontend", "dist")));
+//   app.get("/*", function (req, res) {
+//     res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
+//   });
 // }
 
 const port = process.env.PORT || 5000;
