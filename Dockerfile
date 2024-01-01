@@ -11,4 +11,4 @@ RUN npm run install:all
 RUN npm generate
 RUN npm run migrate
 
-CMD ["npm", "run", "deploy"]
+CMD ["npm", "run", "start"]
