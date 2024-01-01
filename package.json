@@ -8,7 +8,8 @@
     "setup": "cd backend && npm run setup",
     "deploy": "cd backend && npm run deploy",
     "generate": "cd backend && npm run generate",
-    "migrate": "cd backend && npm run migrate"
+    "migrate": "cd backend && npm run migrate",
+    "start": "cd backend && npm run start"
   },
   "keywords": [],
   "author": "",
