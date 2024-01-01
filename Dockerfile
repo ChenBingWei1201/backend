@@ -8,7 +8,7 @@ WORKDIR /app
 RUN corepack enable
 RUN npm run setup
 RUN npm run install:all
-RUN npm run generate
-RUN npm run migrate
+# RUN npm run generate
+# RUN npm run migrate
 
 CMD ["npm", "run", "start"]
